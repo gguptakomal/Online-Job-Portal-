@@ -1,0 +1,21 @@
+public class JobPortalApp {
+    public static void main(String[] args) {
+        JobPortalService jobPortalService = new JobPortalService();
+        
+        // Register users
+        User recruiter = new User("recruiter1", "password", "recruiter");
+        User applicant = new User("applicant1", "password", "applicant");
+        jobPortalService.registerUser(recruiter);
+        jobPortalService.registerUser(applicant);
+        
+        // Add job
+        Job job = new Job(0, "Java Developer", "Develop Java applications", recruiter.getId());
+        jobPortalService.addJob(job);
+        
+        // View jobs
+        jobPortalService.viewJobs();
+        
+        // Apply for a job
+        jobPortalService.applyForJob(1, applicant.getId());
+    }
+}

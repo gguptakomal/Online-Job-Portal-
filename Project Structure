@@ -1,0 +1,37 @@
+job-portal/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── jobportal/
+│   │   │           ├── config/
+│   │   │           ├── controller/
+│   │   │           ├── dto/
+│   │   │           ├── exception/
+│   │   │           ├── model/
+│   │   │           ├── repository/
+│   │   │           ├── security/
+│   │   │           ├── service/
+│   │   │           └── util/
+│   │   ├── resources/
+│   │   │   ├── static/
+│   │   │   ├── templates/
+│   │   │   ├── application.properties
+│   │   │   └── data.sql
+│   ├── test/
+│   │   └── java/
+│   │       └── com/
+│   │           └── jobportal/
+│   │               ├── controller/
+│   │               ├── service/
+│   │               └── repository/
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   └── ...
+├── .gitignore
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+└── README.md
